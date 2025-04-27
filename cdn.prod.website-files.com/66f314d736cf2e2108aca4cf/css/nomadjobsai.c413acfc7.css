@@ -2065,7 +2065,7 @@ textarea.w-input, textarea.w-select {
   --text-color--text-success\<deleted\|relume-variable-text-color-4\>: var(--base-color-system--success-green\<deleted\|relume-variable-system-color-1\>);
   --background-color--background-error\<deleted\|relume-variable-background-color-8\>: var(--base-color-system--error-red-light\<deleted\|relume-variable-system-color-6\>);
   --text-color--text-error\<deleted\|relume-variable-text-color-5\>: var(--base-color-system--error-red\<deleted\|relume-variable-system-color-5\>);
-  --base-colors--cyan: #d16950;
+  --base-colors--cyan: #f97e60;
   --base-colors--purple: #DE7356;
   --border--stroke: #f6f8fa26;
   --base-colors--extra-dark: #141414;
@@ -3642,7 +3642,7 @@ figcaption {
 }
 
 .gradient_stroke {
-  background-image: linear-gradient(90deg, #DE735600, var(--base-colors--purple) 25%, var(--base-colors--cyan) 75%, #d1695000);
+  background-image: linear-gradient(90deg, #DE735600, var(--base-colors--purple) 25%, var(--base-colors--cyan) 75%, #f97e6000);
   width: 50%;
   height: 1px;
   margin-left: auto;

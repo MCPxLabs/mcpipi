@@ -19,8 +19,8 @@ Interact directly with the Solana blockchain to query data, execute transactions
 🔒 **Secure Wallet Management**  
 Connect Claude AI to Solana wallets using environment variables for maximum security.
 
-🎯 **Comprehensive On-Chain Tools**  
-Deploy tokens, mint NFTs, check balances, resolve Solana domains, trade assets, and more — all via standardized commands.
+🎯 ****  
+
 
 🛠️ **Easy Integration with Claude Desktop**  
 Add MCP Trading Agent effortlessly to your Claude Desktop configuration and start using Solana tools immediately.

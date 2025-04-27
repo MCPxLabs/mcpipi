@@ -1,0 +1,147 @@
+# MCP Trading Agent  
+**Empowering AI Agents on Solana**
+
+---
+
+## What is MCP Trading Agent?
+
+MCP Trading Agent is a powerful Model Context Protocol (MCP) server designed to extend Claude AI’s capabilities into the Solana blockchain. Built on the Solana Agent Kit, it provides a seamless, standardized way for AI agents to interact with Solana — enabling transaction execution, wallet management, on-chain data querying, token trading, NFT minting, and much more.
+
+Whether you're an AI developer, crypto enthusiast, or a project builder, MCP Trading Agent unlocks next-level blockchain automation powered by Claude AI.
+
+---
+
+## Key Features
+
+🚀 **Blockchain Operations Made Simple**  
+Interact directly with the Solana blockchain to query data, execute transactions, and manage wallets.
+
+🔒 **Secure Wallet Management**  
+Connect Claude AI to Solana wallets using environment variables for maximum security.
+
+🎯 **Comprehensive On-Chain Tools**  
+Deploy tokens, mint NFTs, check balances, resolve Solana domains, trade assets, and more — all via standardized commands.
+
+🛠️ **Easy Integration with Claude Desktop**  
+Add MCP Trading Agent effortlessly to your Claude Desktop configuration and start using Solana tools immediately.
+
+⚡ **Optimized for Speed and Scalability**  
+Built using Node.js and the latest Solana libraries for high performance across mainnet, testnet, and devnet.
+
+---
+
+## Available Tools
+
+- **GET_ASSET** — Retrieve detailed token information  
+- **DEPLOY_TOKEN** — Launch new tokens on Solana  
+- **GET_PRICE** — Access real-time token prices  
+- **WALLET_ADDRESS** — Fetch wallet addresses  
+- **BALANCE** — Check wallet balances  
+- **TRANSFER** — Send tokens between wallets  
+- **MINT_NFT** — Create and mint NFTs effortlessly  
+- **TRADE** — Execute on-chain token trades  
+- **REQUEST_FUNDS** — Request testnet funds for development  
+- **RESOLVE_DOMAIN** — Resolve .sol domain names  
+- **GET_TPS** — Monitor Solana’s network speed (TPS)
+
+---
+
+## Quick Installation
+
+**Option 1: Quick Install (Recommended)**  
+```bash
+curl -fsSL https://raw.githubusercontent.com/sendaifun/solana-mcp/main/scripts/install.sh -o solana-mcp-install.sh
+chmod +x solana-mcp-install.sh && ./solana-mcp-install.sh --backup
+```
+
+**Option 2: Install via npm**  
+```bash
+npm install -g solana-mcp
+# or inside your project
+npm install solana-mcp
+```
+
+**Option 3: Build from Source**  
+```bash
+git clone https://github.com/sendaifun/solana-mcp
+cd solana-mcp
+pnpm install
+pnpm run build
+```
+
+---
+
+## Configuration Guide
+
+**Environment Setup**  
+Create a `.env` file:
+```
+SOLANA_PRIVATE_KEY=your_private_key_here
+RPC_URL=your_solana_rpc_url_here
+OPENAI_API_KEY=your_openai_api_key (optional)
+```
+
+**Claude Desktop Integration**  
+Add MCP Trading Agent to your Claude Desktop config file and restart Claude for changes to apply.
+
+Sample config:
+```json
+{
+  "mcpServers": {
+    "solana-mcp": {
+      "command": "npx",
+      "args": ["solana-mcp"],
+      "env": {
+        "RPC_URL": "your_solana_rpc_url_here",
+        "SOLANA_PRIVATE_KEY": "your_private_key_here",
+        "OPENAI_API_KEY": "your_openai_api_key"
+      },
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}
+```
+
+---
+
+## System Requirements
+
+- Node.js v16 or higher
+- Solana wallet (private key)
+- RPC endpoint URL (mainnet, testnet, or devnet)
+- pnpm (recommended), npm, or yarn
+
+---
+
+## Security Best Practices
+
+- Always keep your private keys secure.
+- Use environment variables for all sensitive information.
+- Test extensively on devnet or testnet before moving to mainnet.
+- Monitor AI agent activity regularly.
+- Consider using dedicated wallets for AI-related transactions.
+
+---
+
+## Troubleshooting
+
+- Check if your Solana private key and RPC URL are correct.
+- Confirm you're connected to the right network (mainnet/testnet/devnet).
+- Review Claude Desktop logs for any error messages.
+- Ensure the MCP server build completed successfully.
+
+---
+
+## Dependencies
+
+- `@solana/web3.js`
+- `@modelcontextprotocol/sdk`
+- `solana-agent-kit`
+
+---
+
+## Join the Future of AI x Blockchain on Solana
+
+MCP Trading Agent is the bridge between AI agents and the decentralized future. Fast, flexible, and secure — it’s your go-to server for building smarter, blockchain-enabled applications.
+

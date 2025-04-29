@@ -3939,15 +3939,17 @@ figcaption {
 .footer_top-wrapper {
   grid-column-gap: 4vw;
   grid-template-rows: auto;
-  grid-template-columns: .25fr .25fr;
-  justify-content: space-between;
+  grid-template-columns: .2fr .2fr;
+  justify-content: center;
   align-items: center;
 }
 
 .footer_logo-link {
   padding-left: 0;
 }
-
+.footer_logo {
+  height: 120px;
+}
 .footer_social-list {
   grid-column-gap: .75rem;
   grid-row-gap: 0rem;
